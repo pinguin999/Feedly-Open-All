@@ -12,7 +12,7 @@
 
 //Config
 var key = 87; // 'w' key
-var maxTabs = 100;
+var maxTabs = 50;
 
 (function() {    
     var onKeyDown = function(event) {
@@ -27,7 +27,9 @@ var maxTabs = 100;
                 {
                     continue;
                 }
-                GM_openInTab(links[0].href);
+                //GM_openInTab(links[0].href);
+				//chrome.tabs.create({ url: links[0].href });
+				window.open( links[0].href, '_blank');
                 links[0].click();
             }
         }

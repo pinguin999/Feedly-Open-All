@@ -1,0 +1,14 @@
+{
+  "name": "Feedly Open in Background Tabs",
+  "version": "1.2",
+  "description": "Feedly Open in Background Tabs. Use w to open all feeds.",
+  "permissions": [ "tabs", "http://feedly.com/*", "https://feedly.com/*" ],
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://feedly.com/*", "https://feedly.com/*"],
+      "js": ["Feedly Open in Background Tabs.user.js"]
+    }
+  ]
+}
+

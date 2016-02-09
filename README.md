@@ -1,4 +1,4 @@
-Steamgifts Bot
+Feedly open all news in tabs
 ===========
 
 Install:
